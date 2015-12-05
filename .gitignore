@@ -1,0 +1,21 @@
+# Mac file system custom attributes
+.DS_Store
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# shell scripts
+*.sh
+
+# archives
+*.rar
+*.zip
+
+.sass-cache/
+bower_components/
+node_modules/
+
