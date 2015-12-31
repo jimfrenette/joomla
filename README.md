@@ -1,1 +1,3 @@
 # joomla
+
+*   [/plugins](/plugins)
