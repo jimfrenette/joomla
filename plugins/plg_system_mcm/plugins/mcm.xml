@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="system">
+	<name>plg_system_mcm</name>
+	<author>Jim Frenette</author>
+	<creationDate>December 2015</creationDate>
+	<copyright>Copyright (C) 2015. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<authorEmail>jim@jimfrenette.com</authorEmail>
+	<authorUrl>jimfrenette.com</authorUrl>
+	<version>0.0.1</version>
+	<description>PLG_SYSTEM_MCM_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="mcm">mcm.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<!--
+	<media folder="media" destination="plg_system_mcm">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>src</folder>
+		<filename>bower.json</filename>
+		<filename>gulpfile.js</filename>
+		<filename>index.html</filename>
+		<filename>package.json</filename>
+		<filename>require.build.js</filename>
+	</media>
+	-->
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_mcm.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_mcm.sys.ini</language>
+	</languages>
+
+</extension>
