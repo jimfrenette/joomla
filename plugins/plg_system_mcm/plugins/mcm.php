@@ -19,9 +19,14 @@ class plgSystemMyComMedia extends JPlugin {
 
 		if('com_media' == JRequest::getCMD('option')) {
 
-			$overridePath = FOFPlatform::getInstance()->getTemplateOverridePath('com_media', true) . '/' . JRequest::getCMD('view');
+			$view = JRequest::getCMD('view');
 
-			require_once $overridePath . '/view.html.php';
+			if (('images' == $view) || ('imageslist' == $view)) {
+
+				$overridePath = FOFPlatform::getInstance()->getTemplateOverridePath('com_media', true) . '/' . $view;
+
+				require_once $overridePath . '/view.html.php';
+			}
 		}
 	}
 
