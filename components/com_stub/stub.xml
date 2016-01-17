@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>com_stub</name>
+	<author>Jim Frenette</author>
+	<creationDate>January 2016</creationDate>
+	<copyright>Copyright (C) 2016. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<authorEmail>jim@jimfrenette.com</authorEmail>
+	<authorUrl>jimfrenette.com</authorUrl>
+	<version>0.0.1</version>
+	<description>COM_STUB_XML_DESCRIPTION</description>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>stub.php</filename>
+	</files>
+
+	<administration>
+		
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>stub.php</filename>
+		</files>
+ 
+		<languages folder="language">
+			<language tag="en-GB">en-GB/en-GB.com_stub.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_stub.sys.ini</language>
+		</languages>
+
+	</administration>
+</extension>
