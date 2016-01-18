@@ -10,7 +10,7 @@ defined('_JEXEC') or die;
 /**
  * Stub Component Controller
  */
-class CbhController extends JControllerLegacy
+class StubController extends JControllerLegacy
 {
 
 	public function display($cachable = false, $urlparams = false)
