@@ -10,7 +10,7 @@ defined('_JEXEC') or die;
 /**
  * HTML View class for the Stub component
  */
-class StubViewStub extends JViewLegacy
+class StubViewSomeview extends JViewLegacy
 {
 	/**
 	 * Execute and display a template script.

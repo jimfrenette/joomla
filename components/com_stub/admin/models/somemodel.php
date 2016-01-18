@@ -8,9 +8,9 @@
 defined('_JEXEC') or die;
 
 /**
- * Stub Component Stub Model
+ * Stub Component Somemodel Model
  */
-class StubModelStub extends JModelLegacy
+class StubModelSomemodel extends JModelLegacy
 {
 
 }

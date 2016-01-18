@@ -15,13 +15,13 @@ class StubController extends JControllerLegacy
 
 	public function display($cachable = false, $urlparams = false)
 	{
-		$vName = $this->input->get('view', 'stub');
+		$vName = $this->input->get('view', 'someview');
 
 		switch ($vName)
 		{
-			case 'stub':
+			case 'someview':
 				$vLayout = $this->input->get('layout', 'default', 'string');
-				$mName   = 'stub'; //model name
+				$mName   = 'somemodel'; //model name
 
 				break;
 
