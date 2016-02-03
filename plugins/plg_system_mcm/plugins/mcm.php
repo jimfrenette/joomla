@@ -13,22 +13,30 @@ class plgSystemMyComMedia extends JPlugin {
      * @var boolean
      * @since 3.1
      */
-    //protected $autoloadLanguage = true;
+    protected $autoloadLanguage = true;
 
-	public function onAfterRoute() {
+    public function onAfterInitialise() {
 
-		if('com_media' == JRequest::getCMD('option')) {
+        $input = JFactory::getApplication()->input;
 
-			$view = JRequest::getCMD('view');
+        if('com_media' == $input->getCMD('option')) {
 
-			if (('images' == $view) || ('imageslist' == $view)) {
+            $this->loadView($input->getCMD('view'));
 
-				$overridePath = FOFPlatform::getInstance()->getTemplateOverridePath('com_media', true) . '/' . $view;
+        }
 
-				require_once $overridePath . '/view.html.php';
-			}
-		}
-	}
+        return true;
+    }
+
+    protected function loadView($view)
+    {
+        if (('images' == $view) || ('imageslist' == $view)) {
+
+            $overridePath = FOFPlatform::getInstance()->getTemplateOverridePath('com_media', true) . '/' . $view;
+
+            require_once $overridePath . '/view.html.php';
+        }
+    }
 
 }
 ?>
