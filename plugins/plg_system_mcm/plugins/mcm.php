@@ -30,7 +30,7 @@ class plgSystemMyComMedia extends JPlugin {
 
     protected function loadView($view)
     {
-        if (('images' == $view) || ('imageslist' == $view)) {
+        if (('images' == $view) || ('imagesList' == $view)) {
 
             $overridePath = FOFPlatform::getInstance()->getTemplateOverridePath('com_media', true) . '/' . $view;
 
