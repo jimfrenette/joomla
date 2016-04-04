@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>com_media_mcm</name>
+	<author>Jim Frenette</author>
+	<creationDate>April 2016</creationDate>
+	<copyright>Copyright (C) 2016. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<authorEmail></authorEmail>
+	<authorUrl>http://jimfrenette.com</authorUrl>
+	<version>0.1.0</version>
+	<description>COM_MEDIA_MCM_XML_DESCRIPTION</description>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>media_mcm.php</filename>
+	</files>
+
+	<administration>
+
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>media_mcm.php</filename>
+		</files>
+
+		<languages folder="language">
+			<language tag="en-GB">en-GB/en-GB.com_media_mcm.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_media_mcm.sys.ini</language>
+		</languages>
+
+	</administration>
+</extension>
