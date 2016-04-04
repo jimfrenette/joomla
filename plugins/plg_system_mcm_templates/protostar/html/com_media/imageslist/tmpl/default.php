@@ -28,3 +28,9 @@ defined('_JEXEC') or die;
 		<div class="alert alert-info"><?php echo JText::_('COM_MEDIA_NO_IMAGES_FOUND'); ?></div>
 	</div>
 <?php endif; ?>
+
+<script type="text/javascript">
+// global app namespace
+var com_media_mcm = com_media_mcm || {};
+</script>
+<script src="/media/com_media_mcm/js/imageslist.js"></script>

@@ -20,4 +20,43 @@
 		<language tag="en-GB">en-GB/en-GB.plg_system_mcm.sys.ini</language>
 	</languages>
 
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="imgminwidth"
+                    type="text"
+                    default="400"
+                    label="PLG_SYSTEM_MCM_FIELD_IMGMINWIDTH_LABEL"
+                    description="PLG_SYSTEM_MCM_FIELD_IMGMINWIDTH_DESCRIPTION"
+                    filter="integer"
+                />
+                <field
+                    name="imgminheight"
+                    type="text"
+                    default="360"
+                    label="PLG_SYSTEM_MCM_FIELD_IMGMINHEIGHT_LABEL"
+                    description="PLG_SYSTEM_MCM_FIELD_IMGMINHEIGHT_DESCRIPTION"
+                    filter="integer"
+                />
+                <field
+                    name="imgmaxwidth"
+                    type="text"
+                    default="640"
+                    label="PLG_SYSTEM_MCM_FIELD_IMGMAXWIDTH_LABEL"
+                    description="PLG_SYSTEM_MCM_FIELD_IMGMAXWIDTH_DESCRIPTION"
+                    filter="integer"
+                />
+                <field
+                    name="imgmaxheight"
+                    type="text"
+                    default="480"
+                    label="PLG_SYSTEM_MCM_FIELD_IMGMAXHEIGHT_LABEL"
+                    description="PLG_SYSTEM_MCM_FIELD_IMGMAXHEIGHT_DESCRIPTION"
+                    filter="integer"
+                />
+            </fieldset>
+        </fields>
+    </config>
+
 </extension>

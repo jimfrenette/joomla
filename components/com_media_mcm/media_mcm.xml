@@ -15,6 +15,13 @@
 		<filename>media_mcm.php</filename>
 	</files>
 
+	<media folder="media" destination="com_media_mcm">
+		<folder>src</folder>
+		<filename>gulpfile.js</filename>
+		<filename>index.html</filename>
+		<filename>package.json</filename>
+	</media>
+
 	<administration>
 
 		<files folder="admin">
