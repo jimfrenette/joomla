@@ -95,8 +95,6 @@ JFactory::getDocument()->addScriptDeclaration(
 				<button class="btn btn-small disabled" id="image-insert" type="button" onclick="<?php if ($this->state->get('field.id')):?>window.parent.jInsertFieldValue(document.getElementById('f_url').value,'<?php echo $this->state->get('field.id');?>');<?php else:?>ImageManager.onok();<?php endif;?>window.parent.jModalClose();">
 					<span class="icon-apply icon-white"></span><?php echo JText::_('COM_MEDIA_INSERT') ?>
 				</button>
-				<button class="btn btn-small" type="button" onclick="window.parent.jModalClose();">
-					<span class="icon-cancel"></span>Close</button>
 			</div>
 		</div>
 		<!-- Begin: Image Manager -->
