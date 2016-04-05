@@ -1,5 +1,5 @@
 /**
- * images modal: image manager behavior for _MCM component
+ * images modal: image manager behavior for com_media_mcm component
  *
  * @package     Joomla.Extensions
  * @subpackage  com_media_mcm
@@ -77,7 +77,7 @@ _deleteHandler = function(event) {
         $('#imageframe').attr('src', function (i, val) { return val; });
 
         // changes pending, save to apply
-        helper.showMessage(file + ' deleted. ' + _MCM.language.apply_article_msg,
+        helper.showMessage(file + ' deleted. ' + com_media_mcm.language.apply_article_msg,
             'success',
             'Image Changes Pending',
             $('#system-message-container')
