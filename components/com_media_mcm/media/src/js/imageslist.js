@@ -1,5 +1,5 @@
 /**
- * images modal: imageframe behavior for com_cbh component
+ * images modal: imageframe behavior for com_media_mcm component
  *
  * @package     Joomla.Extensions
  * @subpackage  com_media_mcm
