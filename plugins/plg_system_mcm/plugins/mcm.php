@@ -3,8 +3,8 @@
 defined ( '_JEXEC' ) or die ( 'Restricted access' );
 
 jimport('joomla.plugin.plugin');
- 
-class plgSystemMyComMedia extends JPlugin { 
+
+class plgSystemMcm extends JPlugin {
     /**
      * Load the language file on instantiation.
      * Note this is only available in Joomla 3.1 and higher.
