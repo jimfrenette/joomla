@@ -40,6 +40,7 @@ JFactory::getDocument()->addScriptDeclaration(
 	"
 );
 ?>
+<link rel="stylesheet" href="/media/com_media_mcm/css/loading.css" />
 <style>
 .control-inline {
 	display: inline-block;
@@ -90,7 +91,7 @@ JFactory::getDocument()->addScriptDeclaration(
 					<span class="icon-trash"></span><?php echo JText::_('JACTION_DELETE'); ?>
 				</button><?php endif; ?>
 				<button class="btn btn-small disabled" id="image-apply" type="button">
-					<span class="icon-apply icon-white"></span><?php echo JText::_('TPL_CBH_APPLY_ARTICLE') ?>
+					<span class="icon-apply icon-white"></span><?php echo JText::_('PLG_SYSTEM_MCM_APPLY') ?>
 				</button>
 				<button class="btn btn-small disabled" id="image-insert" type="button" onclick="<?php if ($this->state->get('field.id')):?>window.parent.jInsertFieldValue(document.getElementById('f_url').value,'<?php echo $this->state->get('field.id');?>');<?php else:?>ImageManager.onok();<?php endif;?>window.parent.jModalClose();">
 					<span class="icon-apply icon-white"></span><?php echo JText::_('COM_MEDIA_INSERT') ?>
