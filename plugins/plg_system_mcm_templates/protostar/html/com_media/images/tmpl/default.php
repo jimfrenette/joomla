@@ -34,13 +34,14 @@ if (!JFolder::exists($imageBasePath . $imageAssetFolder)) {
 
 $this->state->folder = $imageAssetFolder;
 
+JFactory::getDocument()->addStyleSheet('/media/com_media_mcm/css/loading.css');
+
 JFactory::getDocument()->addScriptDeclaration(
 	"
 	var image_base_path = '" . $imageBasePath . "/';
 	"
 );
 ?>
-<link rel="stylesheet" href="/media/com_media_mcm/css/loading.css" />
 <style>
 .control-inline {
 	display: inline-block;
