@@ -109,9 +109,6 @@ JFactory::getDocument()->addScriptDeclaration(
 					<div class="control-label control-inline">
 						<label class="checkbox"><input type="checkbox" id="intro-image-flag" value="">Intro Image</label>
 					</div>
-					<div class="control-label control-inline">
-						<label class="checkbox"><input type="checkbox" id="gallery-image-flag"value="">Gallery Image</label>
-					</div>
 				</div>
 				<?php if (!$this->state->get('field.id')):?>
 				<div class="span7 control-group">

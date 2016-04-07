@@ -15,10 +15,8 @@ var basePath = window.parent.image_base_path,
     // parent document
     $imgManager = $('[data-role="image-manager"]', parent.document.body),
     $introImageFlag = $('#intro-image-flag', parent.document.body),
-    $galleryImageFlag = $('#gallery-image-flag', parent.document.body),
     // outer most document
     $introImage = $('#jform_images_image_intro', top.document.body);
-    $galleryImage = $('#jform_images_image_gallery', top.document.body);
 
 _imgPreviewHandler = function(event) {
     event.preventDefault();
@@ -33,8 +31,6 @@ _imgPreviewHandler = function(event) {
         $introImageFlag.prop('checked', false);
     }
 
-    _setGalleryImageFlag(path);
-
     /**
      * call Joomla! com_media populateFields function,
      * /media/media/js/popup-imagemanager.js */
@@ -47,18 +43,6 @@ _showImageManager = function(path) {
 
     $imgManager.removeClass('hide');
     $('[data-role="image-manager-buttons"] button', parent.document.body).removeClass('disabled');
-};
-
-_setGalleryImageFlag = function(path) {
-
-    var gallery = JSON.parse($galleryImage.val()),
-        index = helper.findIndexOf(gallery, 'image', basePath + path);
-
-    if (index != -1 && gallery[index].image == basePath + path) {
-        $galleryImageFlag.prop('checked', true);
-    } else {
-        $galleryImageFlag.prop('checked', false);
-    }
 };
 
 // event listeners
