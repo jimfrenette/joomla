@@ -12,11 +12,9 @@ var iresizer = require('./modules/iresizer');
 
 var $applyBtn          = $('#image-apply'),
     $deleteBtn         = $('#image-delete'),
-    $galleryImageFlag  = $('#gallery-image-flag'),
     $introImageFlag    = $('#intro-image-flag'),
     $loading           = $('.loading'),
     // form inputs under images and links tab in parent
-    $galleryImage      = $('#jform_images_image_gallery', parent.document.body);
     $introImage        = $('#jform_images_image_intro', parent.document.body);
     $introImageCaption = $('#jform_images_image_intro_caption', parent.document.body);
 
@@ -37,11 +35,6 @@ _applyHandler = function() {
             _setIntroImageValue('','');
         }
     }
-
-    var action = $galleryImageFlag.prop('checked') ? 'add' : 'remove';
-
-    // set value of image gallery input
-    _setGalleryImageValue(path, caption, action);
 
     // parent message: changes pending article save
     helper.showMessage(com_media_mcm.language.apply_article_msg,
@@ -68,7 +61,6 @@ _deleteHandler = function(event) {
     $.get(url, function(data) {
         // update inputs
         _setIntroImageValue('','');
-        _setGalleryImageValue(path, caption, 'remove');
 
         // close image manager
         $('[data-role="image-manager"]').addClass('hide');
@@ -93,24 +85,6 @@ _deleteHandler = function(event) {
         //TODO: _deleteHandler callback for the loading ...
         setTimeout(function(){ $loading.addClass('hide'); }, 1500);
     });
-};
-
-_setGalleryImageValue = function(path, caption, action) {
-
-    var gallery = JSON.parse($galleryImage.val()),
-        index = helper.findIndexOf(gallery, 'image', path);
-
-    if ('add' == action && index == -1) {
-        // add to gallery
-        gallery.push({image:path, caption:caption});
-    }
-    if ('remove' == action && index != -1) {
-        // remove from gallery
-        gallery.splice(index, 1);
-    }
-
-    // set input value
-    $galleryImage.val(JSON.stringify(gallery));
 };
 
 _setIntroImageValue = function(path, caption) {
