@@ -207,6 +207,9 @@ com_media_mcm.iresizer = {
 	max_height: '<?php echo $plg_system_mcm_params->get('imgmaxheight'); ?>',
 	file_id: 'upload-file'
 };
+com_media_mcm.language = {
+	apply_article_msg: '<?php echo JText::_('COM_MEDIA_MCM_APPLY_ARTICLE_SAVEREQ') ?>'
+};
 </script>
 <script src="/media/com_media_mcm/js/images.js"></script>
 
