@@ -208,7 +208,7 @@ com_media_mcm.iresizer = {
 	file_id: 'upload-file'
 };
 com_media_mcm.language = {
-	apply_article_msg: '<?php echo JText::_('COM_MEDIA_MCM_APPLY_ARTICLE_SAVEREQ') ?>'
+	apply_article_msg: '<?php echo JText::_('PLG_SYSTEM_MCM_ARTICLE_SAVEREQ') ?>'
 };
 </script>
 <script src="/media/com_media_mcm/js/images.js"></script>
